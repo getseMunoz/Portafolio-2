@@ -1,0 +1,323 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-blanco: #ffffff;
+    --color-celeste: #e0f7fa;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    padding: 0 2rem; /* Márgenes generales para evitar que los elementos estén al borde */
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-blanco);
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.cabecera__logo {
+    max-width: 80px;
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navegacion__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-celeste);
+    width: 100%;
+}
+
+.presentacion__foto {
+    max-width: 150px;
+    order: 2;
+}
+
+.presentacion__contenedor {
+    order: 1;
+}
+
+.presentacion__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    gap: 1rem; /* Espacio entre los íconos */
+    margin-top: 1rem;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    margin-bottom: 3rem;
+    background-color: var(--color-blanco);
+    width: 100%;
+}
+
+.sobre-mi__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-mi__texto {
+    margin: 20px;
+}
+
+.sobre-mi__firma {
+    margin: 50px;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    margin-bottom: 3rem;
+    background-color: var(--color-celeste);
+    width: 100%;
+}
+
+.habilidades__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades__icono {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    margin-bottom: 3rem;
+    background-color: var(--color-blanco);
+    width: 100%;
+}
+
+.aficiones__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.aficiones__lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aficiones__icono {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+/*------------------------------ Sección de Formación Académica ----------------------*/
+.formacion {
+    margin-bottom: 3rem;
+    background-color: var(--color-celeste);
+    width: 100%;
+}
+
+.formacion__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.formacion__lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.formacion__elemento {
+    display: flex;
+    align-items: center;
+}
+
+.formacion__icono {
+    max-width: 100px;
+    margin-right: 1rem;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos {
+    margin-bottom: 3rem;
+    background-color: var(--color-blanco);
+    width: 100%;
+}
+
+.proyectos__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    margin-bottom: 3rem;
+    background-color: var(--color-celeste);
+    width: 100%;
+}
+
+.contacto__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px; /* Limita el ancho del formulario */
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contacto__campo--textarea {
+    height: 150px;
+}
+
+.contacto__boton {
+    padding: 0.8rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contacto__boton:hover {
+    background-color: #333;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .presentacion {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .presentacion__foto {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    .presentacion__foto {
+        max-width: 250px;
+    }
+
+    .habilidades__icono,
+    .aficiones__icono,
+    .formacion__icono {
+        max-width: 120px;
+    }
+}
